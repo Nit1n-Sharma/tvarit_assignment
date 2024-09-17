@@ -1,0 +1,23 @@
+
+CREATE DATABASE IF NOT EXISTS BrazilEduDB;
+USE BrazilEduDB;
+
+CREATE TABLE IF NOT EXISTS EnrolmentsByState (
+    CO_UF VARCHAR(10),
+    Total_Enrolments INT,
+    PRIMARY KEY (CO_UF)
+);
+
+CREATE TABLE IF NOT EXISTS Top10Cities (
+    CO_MUNICIPIO VARCHAR(10),
+    Total_Enrolments INT,
+    PRIMARY KEY (CO_MUNICIPIO)
+);
+
+CREATE TABLE IF NOT EXISTS EnrolmentsByYearCityState (
+    NU_ANO_CENSO INT,
+    CO_UF VARCHAR(10),
+    CO_MUNICIPIO VARCHAR(10),
+    Total_Enrolments INT,
+    PRIMARY KEY (NU_ANO_CENSO, CO_UF, CO_MUNICIPIO)
+);

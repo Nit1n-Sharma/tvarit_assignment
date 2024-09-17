@@ -1,0 +1,6 @@
+loguru
+pyspark
+findspark
+mysql-connector-python
+pandas
+psycopg2
